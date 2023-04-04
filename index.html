@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudipta Maity</title>
+    <link rel="shortcut icon" href="assets/title_logo.png" style="border-radius: 50%" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Sudipta</span> Maity</h1>
+            <p style="padding-left: 20px">Software Developer</p>
+        </div>
+</div>
+
+<div id="about">
+    <div class="container_about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/pic feb23.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a fresher software engineer, I have a diverse set of skills and knowledge to offer. I am proficient in front-end development, specifically using React and Tailwind, which allows me to create user-friendly and responsive interfaces. Additionally, I have expertise in Data Structures and Algorithms and have honed my skills as a competitive programmer. Currently, I am delving into the field of Machine Learning and expanding my skillset in this area. With a passion for learning and an eye for detail, I am committed to delivering high-quality results and contributing to the growth of any organization I work for.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">IT Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Front-End Developer<br>UI/UX Designing</li>
+                    </ul>
+                    <ul>
+                        <li><span>Artificial Intelligence</span><br>Machine Learning</li>
+                    </ul>
+                    <ul>
+                        <li><span>App Development</span><br>Andriod</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Computer Science and Engineering (B.Tech)</span><br>9.61 CGPA (till 5th Semester)	August 2020 - Present<br>Institute of Technical Education and Research,SOA, Bhubaneshwar
+                        </li>
+                        <li><span>12th - CBSE</span><br>88%	May 2018 - February 2020
+                        <br>S.E. Railway Senior Secondary School, Kharagpur
+                        , Kharagpur
+                        </li>
+                        <li><span>10th - ICSE
+                        </span><br>86%	April 2012 - January 2018
+                        <br>Sacred Heart High School,Kharagpur
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -------------Projects---------- -->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="assets/work-i.png">
+                <div class="layer">
+                    <h3>Title 1</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/work-i.png">
+                <div class="layer">
+                    <h3>Title 1</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/work-i.png">
+                <div class="layer">
+                    <h3>Title 1</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/work-i.png">
+                <div class="layer">
+                    <h3>Title 1</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right "></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----contact----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sudiptamaity0492@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91-8637570492</p>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sudipta.maity.0492" target="_blank" style="color:rgb(70, 147, 254)"><i class="fab fa-facebook "></i></a>
+                    <a href="https://twitter.com/sudip_0492" target="_blank" style="color:rgb(55, 201, 234)"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sudip0492/" target="_blank" style="color:rgb(79, 89, 238)"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sudip0492" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="assets/Sudipta_resume.pdf" download class="btn1">Download CV</a>               
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email"placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><span style="padding-right: 20px">Copyright</span><span style="color:#ff004f;padding-right: 20px"><i class="fa-sharp fa-solid fa-copyright"></i></span>Sudipta</p>
+    </div>
+</div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxmExpcq9ZqC9514_0OC3U130xrpqS_83yGEUQ6iqSzGXEroHmTSI93n1JnRvZ1Lnn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully."    
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
