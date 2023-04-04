@@ -302,9 +302,9 @@ nav ul li a:hover{
     cursor: pointer;
 }
 .btn2:hover{
-    color:azure;
-    background:linear-gradient(rgb(135, 231, 255),rgba(44, 160, 255, 0.4));
-    transform: scale(1.1);
+    color:black;
+    background:linear-gradient(rgb(246, 246, 246),rgb(65, 63, 63));
+    transform: scale(1.2);
 }
 
 .contact-right form{
