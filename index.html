@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudipta Maity</title>
-    <link rel="shortcut icon" href="assets/title_logo.png" style="border-radius: 50%" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logotilte.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
     <div class="container_about">
         <div class="row">
             <div class="about-col-1">
-                <img src="assets/pic feb23.jpg">
+                <img src="assets/pic_blazer.png" class="photo1">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -139,8 +139,9 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email"placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn2">Submit</button>
+                    <button type="submit" class="btn2" onclick="displaytext()">Submit</button>
                 </form>
+                <p id="ack">Please Wait...</p>
                 <span id="msg"></span>
             </div>
         </div>
@@ -167,13 +168,19 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwxmExpcq9ZqC9514_0OC3U130xrpqS_83yGEUQ6iqSzGXEroHmTSI93n1JnRvZ1Lnn/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg=document.getElementById('msg')
-  
+
+    function displaytext() {
+			document.getElementById("ack").style.display = "block";
+			setTimeout(function() {
+				document.getElementById("ack").style.display = "none";
+			}, 2000);
+		}
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
             msg.innerHTML = "Message Sent Successfully."    
-            setTimeout(function(){
+            setTimeout(()=>{
                 msg.innerHTML=""
             },5000)
             form.reset()

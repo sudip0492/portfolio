@@ -95,9 +95,10 @@ nav ul li a:hover{
 .about-col-1{
     flex-basis: 35%;
 }
-.about-col-1 img{
+.photo1 {
     width: 100%;
     border-radius: 50%;
+    transition: opacity 0.5s ease-in-out;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -328,10 +329,21 @@ form input,form textarea{
     padding: 2%;
 }
 
+#ack{
+    color:#47acb5;
+    margin-top: -40px;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+}
+
 #msg{
     color:#61b752;
     margin-top: -40px;
     display: block;
+    font-size: 20px;
+    font-weight: 900;
 }
 /* ---------------css for small screen----------- : not req.*/
 
