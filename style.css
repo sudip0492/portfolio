@@ -278,6 +278,28 @@ nav ul li a:hover{
     font-size: 18px;
     transition: 0.5s;
 }
+
+.viewbtn{
+    display:inline-block;
+    background: #56d4f4;
+    margin: 50px auto;
+    width: fit-content;
+    color:azure;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.5s;
+
+}
+.viewbtn:hover{
+   
+    color:#081076;
+    background:linear-gradient(rgb(169, 138, 2),rgb(236, 236, 145));
+    transform: scale(1.1);
+}
 .btn1:hover{
    
     color:#081076;
