@@ -29,6 +29,12 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.context
+{
+    margin-top: -2%;
+    margin-left: 60%;
+   position:fixed;
+}
 .logo{
     width: 140px;   
 }
